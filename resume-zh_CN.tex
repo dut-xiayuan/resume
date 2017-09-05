@@ -11,80 +11,73 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{夏远远}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{xiayuan.y@foxmail.com} \textperiodcentered\ 
+  \phone{(+86) 188-4260-4162}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{大连理工大学}, 大连}{2015.09 -- 至今}
+\textit{在读硕士研究生}\ 信息管理与电子政务, 预计 2018 年 6 月毕业
+\datedsubsection{\textbf{大连工业大学}, 大连}{2011.09 -- 2015.06}
+\textit{学士}\ 信息管理与信息系统
 
 \section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
+\datedsubsection{\textbf{中建八局大连分公司劳务管理系统}}{2016年6月 -- 2016年9月}
+\role{项目负责人，主R}{劳务员工管理系统}
 \begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+组建4人开发团队，包括后端2人，前端1人，UI设计1人；负责沟通业务逻辑、设计系统架构、功能模块划分和部分模块的开发工作；系统采用Spring+Spring MVC+MyBatis的设计实现，使用Tomcat作为web容器，使用SVN作为版本控制工具；经过开发建设，已迭代多个版本，交付后在线稳定运行一年左右。
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item 分模块开发，加快开发速度
+  \item 使用Redis作为MyBatis二级cache，缓存频繁查询项
+  \item 使用spring提供的quartz实现，定时发送出勤统计日报邮件
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\datedsubsection{\textbf{美团点评} 北京}{2017年4月 -- 2017年7月}
+\role{实习}{后台开发}
+通过暑期实习招聘进入美团点评餐饮平台-配送开放平台团队；参与开放平台后台的开发建设工作，负责业务功能模块以及运营后台的开发工作；学习成熟互联网产品的开发过程，参与完整的项目沟通、技术方案设计、方案评审、开发、提测和上线的流程；实习过程中认识到自己的不足，强化了不断学习的意愿。
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 异步实现批量平台账号创建，提供进度轮询的后端接口
+  \item 实现具有限流功能的文字地址转坐标接口
+  \item 完善开放平台API接口幂等性
+\end{itemize}
+
+\datedsubsection{\textbf{问答系统中的文本相似度计算}}{2015 年9月 -- 至今}
+\role{个人研究课题}
+\begin{onehalfspacing}
+课题的出发点是通过文本相似度计算，提高用户从问答系统中获取知识的效率。主要技术手段是使用翻译模型和HNC词汇语义理论，在规模语料集上训练文本翻译概率，将高准确度的翻译概率运用到翻译模型中去，同时使用HNC理论修正翻译模型结果，返回与用户查询相似度较高的问答内容。
+\begin{itemize}
+  \item 提高5\%的特定领域的文本计算结果准确性
+  \item 将翻译模型引入社区问答系统
+  \item 形成成果论文发表
 \end{itemize}
 \end{onehalfspacing}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
 
 \section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 编程语言: Java > C == Python > C++
+  \item 平台: Linux, Windows
+  \item 开发: Java Web
 \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\datedline{辽宁省政府奖学金}{2013 年 12 月}
+\datedline{一等奖学金4次(前5\%)}{2011年 - 2015年}
+\datedline{二等奖学金3次(前20\%)}{2011年 - 2015年}
+\datedline{研究生二等学业奖学金}{2015年 - 2018年}
+\datedline{\textit{一等奖}, 大连市数学竞赛}{2013}
+\datedline{\textit{三等奖}, 全国大学生英语竞赛}{2013}
+\datedline{\textit{三等奖}, 大连理工大学数学竞赛}{2016}
 
 \section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 技术博客: https://cwuyi.me
+  \item GitHub: https://github.com/dut-xiayuan
+  \item 四级: 560分
+  \item 六级: 490分
 \end{itemize}
 
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
 \end{document}
