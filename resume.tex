@@ -1,8 +1,6 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -14,50 +12,51 @@
   \phone{(+86) 188-4260-4162}}
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Dalian University of Technology (DLUT)}, Dalian, China}{Sep. 2015 -- Present}
-\textit{Master student} in Infomation System (IS), expected July 2018
-\datedsubsection{\textbf{Dalian Polytechnic University (DPU)}, Dalian, China}{Sep. 2011 -- Jul. 2015}
-\textit{B.S.} in Infomation System (IS)
+\datedsubsection{\textbf{Dalian University of Technology (DUT)}, Dalian, China}{SEP. 2015 -- JUN. 2018}
+\textit{M.S.} in Information System
+\datedsubsection{\textbf{Dalian Polytechnic University (DPU)}, Dalian, China}{SEP. 2011 -- JUL. 2015}
+\textit{B.S.} in Information Management & Information System
 
 \section{\faUsers\ Experience }
-\datedsubsection{\textbf{Meituan Inc.} Beijing, China}{Apr. 2017 -- Aug. 2017}
-\role{Development Engineer Intern}{Manager: Yongjun Yin}
-Brief introduction: Participate in building Meituan open platform system
+\datedsubsection{\textbf{Envision Energy} Shanghai, China}{NOV. 2017 -- Present}
+\role{Senior Software Engineer}
+    Brief introduction: Responsible for building rule engine service and data subscription service for IoT platform and managing the middleware service(Kafka \& Zookeeper)
 \begin{itemize}
-  \item Implemented order management and third party account feature
-  \item Optimized OpenAPI interface performance
-  \item Interface idempotent transformation
+  \item Delicate system design for rule engine to make it reach a high stability and throughput
+  \item Build a subscription service from bottom to up
+  \item Manage the base service of Kafka & Zookeeper, include user guidance and troubleshooting
 \end{itemize}
 
-\datedsubsection{\textbf{CSCES Labor administration system projects}}{Jun. 2016 -- Sep. 2016}
-\role{Team leader}{Outsourcing Projects}
-Brief introduction: An online employee management system
+\datedsubsection{\textbf{Rule Engine Projects}}{JUL. 2018 -- Present}
+\role{IoT basement, SQL-like Parser \& Executor, TSDB, Redis, Kafka, High Throughput}
 \begin{itemize}
-  \item Implemented staff management, attendance management etc. feature
-  \item Standard SSH framework
-  \item Stable operation of the site
+  \item Participate and be responsible for the development and iteration of the rule engine of the IoT platform
+  \item Design and implement SQL-like interpreter, Users can forward the required device data to the destination by writing SQL-like expressions, Such as TSDB, Redis, Kafka Topic, Streaming Input, etc.
+  \item Processing tens of billions of device points data per day, with an average daily data throughput of tens of TBs
 \end{itemize}
 
-\datedsubsection{\textbf{Academic research}}{Sep. 2015 -- Present}
-\role{Researcher}{Master's research topic}
-Research on Text Similarity Calculation Method in Community Q \& A System
+\datedsubsection{\textbf{Data Subscription Projects}}{OCT. 2018 -- Present}
+\role{Data Subscription, Netty, Websocket, Protobuf, Kafka}
 \begin{itemize}
-  \item Improve the accuracy of text similarity calculation
-  \item A research paper has been published
+    \item Responsible for and participate in the subscription service of IoT platform data
+    \item The project consists of subscription Meta service, subscription Server and Client, Users can describe subscription requirements through the Meta service, Use the Client SDK (Java/Python/C#) provided by the application to initiate a subscription to the Server.
+    \item Ensure complete and reliable subscription data, C/S communication uses a custom binary protocol built on Protobuf, Network IO is built on Netty, Support websocket protocol.
+    \item Single instance (2C4G) Server data processing capability at 2w Messages/sec, C/S throughput at 5w Messages/sec.
 \end{itemize}
 
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\datedsubsection{\textbf{Middleware Service}}{JUN. 2019 -- Present}
+\role{Kafka, Kafka Client SDK, Zookeeper, Microservices}
+\begin{itemize}
+    \item Responsible for the platform's message queue service, Have a detailed reading and understanding of the specific implementation of Kafka and RocketMQ
+    \item Encapsulate the native client of Kafka and RocketMQ to facilitate quick access to the MQ service inside the platform
+    \item Build monitoring metric for MQ and Zookeeper
+    \item Package Dubbo service to adapt to the environment inside the platform, track the progress of the community microservices framework, responsible for daily use problem solving
+\end{itemize}
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: Java > Python > C/C++
-  \item Software Framework: Spring, Mybatis, Hibernate etc.
-  \item Teamwork: Git, Maven etc.
+  \item Programming Languages: Java, Python, C/C++
+  \item Big Data: Apache Kafka, Apache Zookeeper
   \item Platform: Linux
   \item Development: Web,Desktop
 \end{itemize}
@@ -68,7 +67,7 @@ Research on Text Similarity Calculation Method in Community Q \& A System
 
 \section{\faInfo\ Miscellaneous}
 \begin{itemize}[parsep=0.5ex]
-  \item Blog: http://cwuyi.me
+  \item Blog: http://wuyi.me
   \item GitHub: https://github.com/dut-xiayuan
   \item Languages: English - Fluent, Mandarin - Native speaker
 \end{itemize}
